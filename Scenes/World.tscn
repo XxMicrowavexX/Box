@@ -22,7 +22,7 @@ b = Vector2( 256, 0 )
 script = ExtResource( 4 )
 
 [node name="Button" parent="." instance=ExtResource( 2 )]
-position = Vector2( 172.504, 47.0541 )
+position = Vector2( 203.292, 48.9783 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 14.3584, 37.1608 )
@@ -54,10 +54,19 @@ __meta__ = {
 }
 
 [node name="WinText" type="RichTextLabel" parent="Control"]
-margin_left = 81.7795
-margin_top = 48.5867
-margin_right = 337.78
-margin_bottom = 176.587
+margin_left = 145.279
+margin_top = 204.449
+margin_right = 401.279
+margin_bottom = 332.449
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Button2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 144.834, 50.5443 )
+
+[node name="Button3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 32.2666, 47.1769 )
+
+[node name="Button4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 87.107, 49.1012 )

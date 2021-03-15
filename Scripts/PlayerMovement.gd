@@ -8,9 +8,11 @@ func get_input(delto):
 	if Input.is_action_pressed('ui_right'):
 		$Animation.play("Move")
 		vec.x += 1
+		vec.y += 1
 	elif Input.is_action_pressed('ui_left'):
 		$Animation.play("Move")
 		vec.x -= 1
+		vec.y += 1
 	elif Input.is_action_pressed('ui_down'):
 		$Animation.play("Move")
 		vec.y += 1
@@ -19,6 +21,7 @@ func get_input(delto):
 		vec.y -= 1
 	else:
 		$Animation.play("Idle")
+		vec.y += 1
 	vec = vec.normalized() * speed
 
 func _process(delta):

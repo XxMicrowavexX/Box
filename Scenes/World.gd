@@ -13,7 +13,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_pressed("ui_accept"):
 		var box = load("res://Scenes/Box.tscn").instance()
-		box.position = Vector2(180, 36)
+		box.position = Vector2(rand_range(0, 1024), 36)
 		get_tree().get_root().add_child(box)

@@ -5,4 +5,6 @@ Box isn't developed like normal games. Its a playground where you can make your 
 
 # NOTE
 
-This game is **NOT** in **ALPHA** stage it is in very **early dev**
+This game is **NOT** in **ALPHA** stage it is in very **PRE-ALPHA**
+
+Pre-Alpha - Alpha - Beta - Open Beta - Stable

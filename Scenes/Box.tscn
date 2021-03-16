@@ -4,7 +4,7 @@
 [ext_resource path="res://Scenes/Box.gd" type="Script" id=2]
 
 [node name="Box" type="RigidBody2D"]
-gravity_scale = 0.25
+gravity_scale = 0.0
 script = ExtResource( 2 )
 
 [node name="Area" type="Area2D" parent="."]

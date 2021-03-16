@@ -21,14 +21,35 @@ b = Vector2( 256, 0 )
 [node name="World" type="Node2D"]
 script = ExtResource( 4 )
 
+[node name="Button5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 171.773, 62.5708 )
+
+[node name="Button6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 208.814, 27.4537 )
+
+[node name="Button7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 70.7507, 80.8509 )
+
+[node name="Button2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 193.421, 80.8508 )
+
+[node name="Button4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 115.008, 90.9531 )
+
+[node name="Button3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 36.5961, 87.1046 )
+
+[node name="Button8" parent="." instance=ExtResource( 2 )]
+position = Vector2( 214.586, 58.2413 )
+
 [node name="Button" parent="." instance=ExtResource( 2 )]
-position = Vector2( 203.292, 48.9783 )
+position = Vector2( 102.751, 40.8004 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 14.3584, 37.1608 )
+position = Vector2( 13.3963, 10.2217 )
 
 [node name="Box" parent="." instance=ExtResource( 1 )]
-position = Vector2( 180.541, 36.0382 )
+position = Vector2( 158.412, 72.1174 )
 can_sleep = false
 
 [node name="Wall" type="StaticBody2D" parent="."]
@@ -62,11 +83,4 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 144.834, 50.5443 )
-
-[node name="Button3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 32.2666, 47.1769 )
-
-[node name="Button4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 87.107, 49.1012 )
+[node name="Thing" type="RigidBody2D" parent="."]

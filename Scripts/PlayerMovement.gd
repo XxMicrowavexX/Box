@@ -1,4 +1,4 @@
-extends KinematicBody2D
+extends RigidBody2D
 
 export (int) var speed = 100
 
@@ -7,24 +7,21 @@ var vec = Vector2()
 func get_input(delto):
 	if Input.is_action_pressed('ui_right'):
 		$Animation.play("Move")
-		vec.x += 1
-		vec.y += 1
+		linear_velocity.x += 1
 	elif Input.is_action_pressed('ui_left'):
 		$Animation.play("Move")
-		vec.x -= 1
-		vec.y += 1
+		linear_velocity.x -= 1
 	elif Input.is_action_pressed('ui_down'):
 		$Animation.play("Move")
-		vec.y += 1
+		linear_velocity.y += 1
 	elif Input.is_action_pressed('ui_up'):
 		$Animation.play("Move")
-		vec.y -= 1
+		linear_velocity.y -= 10
 	else:
 		$Animation.play("Idle")
-		vec.y += 1
-	vec = vec.normalized() * speed
+		linear_velocity.y += 1
+	linear_velocity = linear_velocity.normalized() * speed
 
 func _process(delta):
-	vec = Vector2()
+	linear_velocity = Vector2()
 	get_input(delta)
-	vec = move_and_slide(vec)
